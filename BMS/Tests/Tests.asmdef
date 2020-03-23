@@ -1,0 +1,12 @@
+﻿{
+    "name": "Tests",
+    "references": [
+        "BMS"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}
