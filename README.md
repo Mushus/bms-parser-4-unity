@@ -4,23 +4,18 @@ BMS parser written in C#
 
 ## Install
 
-### Unity
+### Unity 2019.3
 
-Follow the example below to add it to the `Packages/manifest.json` file.
-
-```manifest.json
-{
-  "dependencies": {
-    "net.mushus.bms-parser-4-unity": "https://github.com/Mushus/bms-parser-4-unity.git"
-  }
-}
-```
+1. Press `Window > Package Manager` on the menu bar to open the `Package Manager` window.
+1. Press the `+` button and select the `Add package from git URL...` from the menu that appears.
+1. Enter `git@github.com:Mushus/bms-parser-4-unity.git#[version]` in the input form that appears and press the `OK` button.
+1. `[Version]` is the version number that you want to use. ex. `v1.0.0`
 
 ## Usage
 
 ```
 var s = File.Open("test.bms", FileMode.Open);
-var parser = new Parser();
+var parser = new BMS.Parser();
 var bms = parser.Parse(s);
 
 Console.WriteLine(bms.Title); // show title
